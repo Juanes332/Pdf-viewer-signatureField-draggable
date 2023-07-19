@@ -1,0 +1,88 @@
+﻿body {
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Segoe UI, Tahoma, sans-serif;
+  }
+  
+  .Example input,
+  .Example button {
+    font: inherit;
+  }
+  
+  .Example header {
+    background-color: #ff7b1d;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .Example__download {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Example__download button {
+    margin-left: 10px;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .Example__download .download-btn {
+    background-color: #e09d00; /* Amarillo */
+    color: #fff; /* Texto blanco */
+  }
+  
+  .Example header h1 {
+    font-size: inherit;
+    margin: 0;
+  }
+  
+  .Example__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  
+  .Example__container__load {
+    margin-top: 1em;
+    color: rgb(0, 0, 0);
+  }
+  
+  .Example__container__document {
+    position: relative; /* Cambiamos a posición relativa */
+    margin: 1em 0;
+  }
+  
+  .Example__container__document .react-pdf__Document {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Example__container__document .react-pdf__Page {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    margin: 1em;
+  }
+  
+  .Example__container__document .react-pdf__Page canvas {
+    width: 100%; /* Cambiamos a ancho 100% */
+    height: auto !important;
+  }
+  
+  .Example__container__document .react-pdf__Page canvas {
+    max-width: 100%;
+    height: auto !important;
+  }
+  
+  .Example__container__document .react-pdf__message {
+    padding: 20px;
+    color: white;
+  }
