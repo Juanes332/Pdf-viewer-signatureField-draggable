@@ -20,7 +20,7 @@ export default function PdfViewer() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [numPages, setNumPages] = useState();
 
-  function onFileChange(event) {
+  const onFileChange = (event) => {
     const { files } = event.target;
 
     if (files && files[0]) {
@@ -28,15 +28,15 @@ export default function PdfViewer() {
     }
   }
 
-  function onDocumentLoadSuccess({ numPages: nextNumPages }) {
+  const onDocumentLoadSuccess = ({ numPages: nextNumPages }) => {
     setNumPages(nextNumPages);
   }
 
-  function handleDrag(e, data) {
+  const handleDrag = (e, data) => {
     setPosition({ x: data.x, y: data.y });
   }
 
-  function handleDownload() {
+  const handleDownload = () => {
     if (file) {
       const downloadLink = document.createElement("a");
       downloadLink.href = URL.createObjectURL(file);
@@ -48,7 +48,7 @@ export default function PdfViewer() {
   return (
     <div className="Example">
       <header>
-        <h1>Firma Ya</h1>
+        <h1>Firma Ya 2 (alpha 0.0.2)</h1>
         <div className="Example__download">
           {file && (
             <button className="download-btn" onClick={handleDownload}>
